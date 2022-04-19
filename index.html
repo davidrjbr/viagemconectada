@@ -5,11 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viagem Conectada</title>
-</head>
-<body>
-    <h1>Instalando a alavanca no cu do david</h1>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-    <div id="ytplayer"></div>
+        h1 {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body class="container">
+        <h1>Bem vindo conectados, nosso site está em construção mas enquanto isso estamos no youtube!</h1>
+        <div id="ytplayer" class="container"></div>
+
 
 <script>
   // Load the IFrame Player API code asynchronously.
@@ -23,8 +35,8 @@
   var player;
   function onYouTubePlayerAPIReady() {
     player = new YT.Player('ytplayer', {
-      height: '360',
-      width: '640',
+      height: '720',
+      width: '1280',
       videoId: 'Z05i9vNWHNw'
     });
   }
