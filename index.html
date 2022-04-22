@@ -4,42 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/76db27fc37.js" crossorigin="anonymous"></script>
     <title>Viagem Conectada</title>
-    <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        h1 {
-            margin-bottom: 24px;
-        }
-    </style>
 </head>
-<body class="container">
-        <h1>Bem vindo conectados, nosso site está em construção mas enquanto isso estamos no youtube!</h1>
-        <div id="ytplayer" class="container"></div>
+<body class="container-fluid">
 
+  <div class="container-site">
+    <nav class="navbar">
+      <div class="nav-container">
+        <img class="img-logo" src="assets/img/logo.jpg" alt="logo">
 
-<script>
-  // Load the IFrame Player API code asynchronously.
-  var tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/player_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        <div class="menu-container">
+          <div class="links">
+            <ul>
+              <li>Sobre</li>
+              <li>Mídias</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="sociais-container">
+            <ul>
+              <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-youtube"></i></a></li></a></li>
+              <li><a href=""><i class="fa-brands fa-twitch"></i></a></li>
+            </ul>
+          </div>
+          <div class="botao-ptbr"></div>
+        </div>
+      </div>
+    </nav>
 
-  // Replace the 'ytplayer' element with an <iframe> and
-  // YouTube player after the API code downloads.
-  var player;
-  function onYouTubePlayerAPIReady() {
-    player = new YT.Player('ytplayer', {
-      height: '720',
-      width: '1280',
-      videoId: 'Z05i9vNWHNw'
-    });
-  }
-</script>
+    <div class="jumbotron">
+      <div class="jumbo-container">
+
+        <div class="jumbo-carrosel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/400/100?random=1" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/400/100?random=2" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/400/100?random=3" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="videos-carrosel">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                <div class="mx-2" id="player1"></div>
+                <div class="mx-2" id="player2"></div>
+                <div class="mx-2" id="player3"></div>
+                <div class="mx-2" id="player4"></div>
+                <div class="mx-2" id="player5"></div>
+              </div>
+            </div>
+          
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="propaganda"></div>
+    <div class="blog">
+      <div class="blog-container">
+        <div class="img-1"></div>
+        <div class="img-2"></div>
+        <div class="img-3"></div>
+        <div class="img-4"></div>
+        <div class="img-5"></div>
+        <div class="img-6"></div>
+        <div class="descricao-1"></div>
+        <div class="descricao-2"></div>
+        <div class="descricao-3"></div>
+        <div class="descricao-4"></div>
+        <div class="descricao-5"></div>
+        <div class="descricao-6"></div>
+      </div>
+    </div>
+    <div class="redes-sociais"></div>
+    <div class="mapa"></div>
+    <div class="propaganda2"></div>
+    <div class="rodape"></div>
+  </div>
+
+<script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,144 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.container-site {
+    display              : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows   : 0.5fr 6fr 2fr 18fr 2fr 4fr 6fr;
+    gap                  : 16px 0px;
+    grid-auto-flow       : row;
+    grid-template-areas  :
+        "navbar navbar navbar"
+        "jumbotron jumbotron jumbotron"
+        "propaganda propaganda propaganda"
+        "blog blog redes-sociais"
+        "propaganda2 propaganda2 propaganda2"
+        "mapa mapa mapa"
+        "rodape rodape rodape";
+
+    width: 100%;
+}
+
+.navbar {
+    grid-area       : navbar;
+}
+
+.jumbotron {
+    grid-area       : jumbotron;
+}
+
+.propaganda {
+    grid-area       : propaganda;
+}
+
+.blog {
+    grid-area       : blog;
+}
+
+.redes-sociais {
+    grid-area       : redes-sociais;
+}
+
+.mapa {
+    grid-area       : mapa;
+}
+
+.propaganda2 {
+    grid-area       : propaganda2;
+}
+
+.rodape {
+    grid-area       : rodape;
+}
+
+
+.nav-container {
+    display              : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows   : 1fr;
+    gap                  : 0px 0px;
+    grid-auto-flow       : row;
+    grid-template-areas  :
+        "logo menu-container menu-container";
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.menu-container {
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows   : 1fr;
+    gap                  : 0px 0px;
+    grid-auto-flow       : row;
+    grid-template-areas  :
+        "links sociais-container";
+}
+
+.links {
+    grid-area: links;
+    width: 60vw;
+}
+
+.links > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links > ul > li {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.sociais-container {
+    grid-area: sociais-container;
+    width: 20vw;
+}
+
+.sociais-container > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.jumbo-container {
+    display              : grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows   : 1.3fr 0.7fr;
+    gap                  : 16px 0px;
+    grid-auto-flow       : row;
+    grid-template-areas  :
+        "jumbo-carrosel jumbo-carrosel jumbo-carrosel"
+        "videos-carrosel videos-carrosel videos-carrosel";
+}
+
+.jumbo-carrosel {
+    grid-area: jumbo-carrosel;
+}
+
+.videos-carrosel {
+    grid-area: videos-carrosel;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo {
+    width           : 120px;
+    height          : auto;
+}
